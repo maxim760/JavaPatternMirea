@@ -1,0 +1,5 @@
+postgres:
+    login: postgres
+    password: postgres
+    dbName: java-16
+
