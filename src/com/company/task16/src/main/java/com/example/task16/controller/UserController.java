@@ -18,9 +18,14 @@ public class UserController {
     private UserService userService;
 
     @GetMapping
-    public ResponseEntity getAll() {
+    public ResponseEntity getAll(
+        @RequestParam(name = "firstName", defaultValue = "", required = false) String firstName,
+        @RequestParam(name = "lastName", defaultValue = "", required = false) String lastName
+    ) {
         try {
-            return ResponseEntity.ok(new SuccessResponse<>(User.toDTO(userService.getUsers())));
+            return ResponseEntity.ok(
+                new SuccessResponse<>(User.toDTO(userService.filterByFields(firstName, lastName)))
+            );
         } catch (Exception e) {
             return ResponseEntity.badRequest().body(new ErrorResponse(e.getMessage()));
         }

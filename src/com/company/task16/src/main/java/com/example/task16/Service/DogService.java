@@ -5,6 +5,7 @@ import com.example.task16.entity.UserEntity;
 import lombok.RequiredArgsConstructor;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.criterion.CriteriaQuery;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
