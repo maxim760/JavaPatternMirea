@@ -15,6 +15,7 @@
       <excludeFolder url="file://$MODULE_DIR$/src/com/company/task13" />
       <excludeFolder url="file://$MODULE_DIR$/src/com/company/task12" />
       <excludeFolder url="file://$MODULE_DIR$/src/com/company/task11" />
+      <excludeFolder url="file://$MODULE_DIR$/src/com/company/task18" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
