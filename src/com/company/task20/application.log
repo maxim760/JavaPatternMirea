@@ -1,0 +1,432 @@
+91376 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – [1;37mClosing JPA EntityManagerFactory for persistence unit 'default'
+[0;39m91379 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – [1;37mHikariPool-1 - Shutdown initiated...
+[0;39m91381 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – [1;37mHikariPool-1 - Shutdown completed.
+[0;39m616  [main] INFO  c.example.task20.Task20Application – Starting Task20Application using Java 15.0.6 on MacBook-Pro-Maksim.local with PID 7851 (/Users/maksimtomanov/IdeaProjects/JavaPatternMirea/src/com/company/task20/target/classes started by maksimtomanov in /Users/maksimtomanov/IdeaProjects/JavaPatternMirea/src/com/company/task20)
+620  [main] INFO  c.example.task20.Task20Application – No active profile set, falling back to 1 default profile: "default"
+1123 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1168 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 38 ms. Found 2 JPA repository interfaces.
+1852 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+1856 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+1857 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+1857 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.58]
+1923 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+1923 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1253 ms
+2081 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+2127 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+2595 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+2941 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+3186 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+3197 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+3207 [main] INFO  c.example.task20.Task20Application – Started Task20Application in 2.932 seconds (JVM running for 3.625)
+8482 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+8483 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+8485 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 2 ms
+8516 [http-nio-8080-exec-1] INFO  com.example.task20.aspect.Aspect – Parameters: com.example.task20.service.UserService@416d90f0
+8533 [http-nio-8080-exec-1] INFO  c.e.task20.service.UserService – get all users with filter: fullName contains im, lastName contains ET
+216430 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+216433 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+216436 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+839  [main] INFO  c.example.task20.Task20Application – Starting Task20Application using Java 15.0.6 on MacBook-Pro-Maksim.local with PID 7981 (/Users/maksimtomanov/IdeaProjects/JavaPatternMirea/src/com/company/task20/target/classes started by maksimtomanov in /Users/maksimtomanov/IdeaProjects/JavaPatternMirea/src/com/company/task20)
+842  [main] INFO  c.example.task20.Task20Application – No active profile set, falling back to 1 default profile: "default"
+1462 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1522 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 50 ms. Found 2 JPA repository interfaces.
+765  [main] INFO  c.example.task20.Task20Application – Starting Task20Application using Java 15.0.6 on MacBook-Pro-Maksim.local with PID 7986 (/Users/maksimtomanov/IdeaProjects/JavaPatternMirea/src/com/company/task20/target/classes started by maksimtomanov in /Users/maksimtomanov/IdeaProjects/JavaPatternMirea/src/com/company/task20)
+768  [main] INFO  c.example.task20.Task20Application – No active profile set, falling back to 1 default profile: "default"
+2493 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+2503 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+2504 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+2504 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.58]
+1379 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1433 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 48 ms. Found 2 JPA repository interfaces.
+2578 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+2578 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1683 ms
+2837 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+2895 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+2292 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+2298 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+2299 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+2299 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.58]
+2381 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+2382 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1562 ms
+3534 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+2585 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+2633 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+3973 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+3131 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+4285 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+4299 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+4313 [main] INFO  c.example.task20.Task20Application – Started Task20Application in 3.961 seconds (JVM running for 5.41)
+3497 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+3751 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+3755 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext – Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+3758 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+3760 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+3763 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+3765 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Pausing ProtocolHandler ["http-nio-8080"]
+3765 [main] INFO  o.a.catalina.core.StandardService – Stopping service [Tomcat]
+3769 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Stopping ProtocolHandler ["http-nio-8080"]
+3769 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Destroying ProtocolHandler ["http-nio-8080"]
+3777 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener – 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+3790 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter – 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+85864 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+85866 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+85868 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+715  [main] INFO  c.example.task20.Task20Application – Starting Task20Application using Java 15.0.6 on MacBook-Pro-Maksim.local with PID 8056 (/Users/maksimtomanov/IdeaProjects/JavaPatternMirea/src/com/company/task20/target/classes started by maksimtomanov in /Users/maksimtomanov/IdeaProjects/JavaPatternMirea/src/com/company/task20)
+718  [main] INFO  c.example.task20.Task20Application – No active profile set, falling back to 1 default profile: "default"
+1235 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1278 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 37 ms. Found 2 JPA repository interfaces.
+1963 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+1968 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+1968 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+1969 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.58]
+2034 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+2034 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1262 ms
+2208 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+2250 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+2684 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+3086 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+3334 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+3346 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+3356 [main] INFO  c.example.task20.Task20Application – Started Task20Application in 3.055 seconds (JVM running for 3.768)
+13983 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+13983 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+13984 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 0 ms
+14015 [http-nio-8080-exec-1] INFO  com.example.task20.aspect.Aspect – Parameters: com.example.task20.service.UserService@3f3a6091
+14034 [http-nio-8080-exec-1] INFO  c.e.task20.service.UserService – get all users with filter: fullName contains im, lastName contains ET
+72126 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+72129 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+72131 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+607  [main] INFO  c.example.task20.Task20Application – Starting Task20Application using Java 15.0.6 on MacBook-Pro-Maksim.local with PID 8106 (/Users/maksimtomanov/IdeaProjects/JavaPatternMirea/src/com/company/task20/target/classes started by maksimtomanov in /Users/maksimtomanov/IdeaProjects/JavaPatternMirea/src/com/company/task20)
+614  [main] INFO  c.example.task20.Task20Application – No active profile set, falling back to 1 default profile: "default"
+1102 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1146 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 37 ms. Found 2 JPA repository interfaces.
+1842 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+1846 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+1847 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+1847 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.58]
+1908 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+1908 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1241 ms
+2068 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+2111 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+2588 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+2913 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+3163 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+3174 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+3184 [main] INFO  c.example.task20.Task20Application – Started Task20Application in 2.921 seconds (JVM running for 3.787)
+7070 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+7071 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+7072 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 1 ms
+7100 [http-nio-8080-exec-2] INFO  com.example.task20.aspect.Aspect – Parameters: com.example.task20.service.UserService@9d2af36
+7117 [http-nio-8080-exec-2] INFO  c.e.task20.service.UserService – get all users with filter: fullName contains im, lastName contains ET
+154471 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+154473 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+154475 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+628  [main] INFO  c.example.task20.Task20Application – Starting Task20Application using Java 15.0.6 on MacBook-Pro-Maksim.local with PID 8194 (/Users/maksimtomanov/IdeaProjects/JavaPatternMirea/src/com/company/task20/target/classes started by maksimtomanov in /Users/maksimtomanov/IdeaProjects/JavaPatternMirea/src/com/company/task20)
+631  [main] INFO  c.example.task20.Task20Application – No active profile set, falling back to 1 default profile: "default"
+1123 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1165 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 36 ms. Found 2 JPA repository interfaces.
+1822 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+1827 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+1827 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+1827 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.58]
+1889 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+1889 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1209 ms
+2056 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+2101 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+2569 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+2972 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+3232 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+3245 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+3257 [main] INFO  c.example.task20.Task20Application – Started Task20Application in 2.975 seconds (JVM running for 3.828)
+6822 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+6823 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+6824 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 1 ms
+71133 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+71136 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+71139 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+603  [main] INFO  c.example.task20.Task20Application – Starting Task20Application using Java 15.0.6 on MacBook-Pro-Maksim.local with PID 8258 (/Users/maksimtomanov/IdeaProjects/JavaPatternMirea/src/com/company/task20/target/classes started by maksimtomanov in /Users/maksimtomanov/IdeaProjects/JavaPatternMirea/src/com/company/task20)
+606  [main] INFO  c.example.task20.Task20Application – No active profile set, falling back to 1 default profile: "default"
+1150 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1193 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 37 ms. Found 2 JPA repository interfaces.
+1917 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+1923 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+1923 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+1924 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.58]
+1991 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+1992 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1316 ms
+2163 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+2205 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+2662 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+2998 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+3277 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+3288 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+3301 [main] INFO  c.example.task20.Task20Application – Started Task20Application in 3.026 seconds (JVM running for 3.701)
+5205 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+5205 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+5206 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 1 ms
+5237 [http-nio-8080-exec-1] INFO  com.example.task20.aspect.Aspect – Parameters: com.example.task20.service.UserService@7f41d979
+5258 [http-nio-8080-exec-1] INFO  c.e.task20.service.UserService – get all users with filter: fullName contains im, lastName contains ET
+507707 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+507709 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+507712 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+612  [main] INFO  c.example.task20.Task20Application – Starting Task20Application using Java 15.0.6 on MacBook-Pro-Maksim.local with PID 8514 (/Users/maksimtomanov/IdeaProjects/JavaPatternMirea/src/com/company/task20/target/classes started by maksimtomanov in /Users/maksimtomanov/IdeaProjects/JavaPatternMirea/src/com/company/task20)
+614  [main] INFO  c.example.task20.Task20Application – No active profile set, falling back to 1 default profile: "default"
+1081 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1123 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 36 ms. Found 2 JPA repository interfaces.
+1828 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+1832 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+1833 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+1833 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.58]
+1893 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+1894 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1219 ms
+2076 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+2120 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+2608 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+2932 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+3172 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+3182 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+3194 [main] INFO  c.example.task20.Task20Application – Started Task20Application in 2.896 seconds (JVM running for 3.707)
+21113 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+21113 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+21114 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 1 ms
+21160 [http-nio-8080-exec-2] INFO  c.e.task20.service.UserService – get all users with filter: fullName contains im, lastName contains ET
+21232 [http-nio-8080-exec-2] INFO  com.example.task20.aspect.Aspect – Class Name: com.example.task20.service.UserService. Method Name: filterByFields. Time taken for Execution is :88ms
+28355 [http-nio-8080-exec-3] INFO  c.e.task20.service.UserService – get all users with filter: fullName contains im, lastName contains ET
+28370 [http-nio-8080-exec-3] INFO  com.example.task20.aspect.Aspect – Class Name: com.example.task20.service.UserService. Method Name: filterByFields. Time taken for Execution is :15ms
+29062 [http-nio-8080-exec-5] INFO  c.e.task20.service.UserService – get all users with filter: fullName contains im, lastName contains ET
+29074 [http-nio-8080-exec-5] INFO  com.example.task20.aspect.Aspect – Class Name: com.example.task20.service.UserService. Method Name: filterByFields. Time taken for Execution is :12ms
+41420 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+41422 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+41425 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+609  [main] INFO  c.example.task20.Task20Application – Starting Task20Application using Java 15.0.6 on MacBook-Pro-Maksim.local with PID 8553 (/Users/maksimtomanov/IdeaProjects/JavaPatternMirea/src/com/company/task20/target/classes started by maksimtomanov in /Users/maksimtomanov/IdeaProjects/JavaPatternMirea/src/com/company/task20)
+611  [main] INFO  c.example.task20.Task20Application – No active profile set, falling back to 1 default profile: "default"
+1097 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1143 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 40 ms. Found 2 JPA repository interfaces.
+1878 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+1882 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+1883 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+1883 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.58]
+1947 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+1947 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1272 ms
+2121 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+2173 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+2670 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+3059 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+3300 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+3314 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+3327 [main] INFO  c.example.task20.Task20Application – Started Task20Application in 3.052 seconds (JVM running for 3.712)
+72315 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+72316 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+72317 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 0 ms
+72365 [http-nio-8080-exec-1] INFO  c.e.task20.service.UserService – get all users with filter: fullName contains im, lastName contains ""
+72445 [http-nio-8080-exec-1] INFO  com.example.task20.aspect.Aspect – Class Name: com.example.task20.service.UserService. Method Name: filterByFields. Time taken for Execution is :95ms
+73374 [http-nio-8080-exec-3] INFO  c.e.task20.service.UserService – get all users with filter: fullName contains im, lastName contains ""
+73387 [http-nio-8080-exec-3] INFO  com.example.task20.aspect.Aspect – Class Name: com.example.task20.service.UserService. Method Name: filterByFields. Time taken for Execution is :13ms
+77084 [http-nio-8080-exec-5] INFO  c.e.task20.service.UserService – get all users with filter: fullName contains "", lastName contains ""
+77096 [http-nio-8080-exec-5] INFO  com.example.task20.aspect.Aspect – Class Name: com.example.task20.service.UserService. Method Name: filterByFields. Time taken for Execution is :12ms
+78063 [http-nio-8080-exec-7] INFO  c.e.task20.service.UserService – get all users with filter: fullName contains "", lastName contains ""
+78075 [http-nio-8080-exec-7] INFO  com.example.task20.aspect.Aspect – Class Name: com.example.task20.service.UserService. Method Name: filterByFields. Time taken for Execution is :12ms
+78658 [http-nio-8080-exec-10] INFO  c.e.task20.service.UserService – get all users with filter: fullName contains "", lastName contains ""
+78670 [http-nio-8080-exec-10] INFO  com.example.task20.aspect.Aspect – Class Name: com.example.task20.service.UserService. Method Name: filterByFields. Time taken for Execution is :12ms
+108453 [http-nio-8080-exec-2] INFO  c.e.task20.service.UserService – add new user Alex Smirnov
+108493 [http-nio-8080-exec-2] INFO  com.example.task20.aspect.Aspect – Class Name: com.example.task20.service.UserService. Method Name: addUser. Time taken for Execution is :39ms
+125087 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+125090 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+125091 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+604  [main] INFO  c.example.task20.Task20Application – Starting Task20Application using Java 15.0.6 on MacBook-Pro-Maksim.local with PID 8625 (/Users/maksimtomanov/IdeaProjects/JavaPatternMirea/src/com/company/task20/target/classes started by maksimtomanov in /Users/maksimtomanov/IdeaProjects/JavaPatternMirea/src/com/company/task20)
+606  [main] INFO  c.example.task20.Task20Application – No active profile set, falling back to 1 default profile: "default"
+1085 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1125 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 35 ms. Found 2 JPA repository interfaces.
+1777 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+1781 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+1782 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+1782 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.58]
+1831 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+1831 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1155 ms
+2040 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+2087 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+2564 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+2879 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+3122 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+3134 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+3145 [main] INFO  c.example.task20.Task20Application – Started Task20Application in 2.871 seconds (JVM running for 3.711)
+5565 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+5565 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+5566 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 1 ms
+5631 [http-nio-8080-exec-2] INFO  c.e.task20.service.UserService – add new user Alex Smirnov
+8816 [http-nio-8080-exec-3] INFO  c.e.task20.service.UserService – get all users with filter: fullName contains "", lastName contains ""
+14636 [http-nio-8080-exec-4] INFO  c.e.task20.service.UserService – get all users with filter: fullName contains mak, lastName contains ""
+23507 [http-nio-8080-exec-5] INFO  c.e.task20.service.UserService – get all users with filter: fullName contains MAK, lastName contains ""
+101599 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+101601 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+101603 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+630  [main] INFO  c.example.task20.Task20Application – Starting Task20Application using Java 15.0.6 on MacBook-Pro-Maksim.local with PID 8692 (/Users/maksimtomanov/IdeaProjects/JavaPatternMirea/src/com/company/task20/target/classes started by maksimtomanov in /Users/maksimtomanov/IdeaProjects/JavaPatternMirea/src/com/company/task20)
+632  [main] INFO  c.example.task20.Task20Application – No active profile set, falling back to 1 default profile: "default"
+1126 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1174 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 42 ms. Found 2 JPA repository interfaces.
+1836 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+1840 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+1841 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+1841 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.58]
+1901 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+1901 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1203 ms
+2056 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+2097 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+2517 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+2846 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+3071 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+3081 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+3091 [main] INFO  c.example.task20.Task20Application – Started Task20Application in 2.794 seconds (JVM running for 3.504)
+15521 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+15522 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+15523 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 1 ms
+15568 [http-nio-8080-exec-1] INFO  c.e.task20.service.UserService – get all users with filter: fullName contains MAK, lastName contains ""
+15636 [http-nio-8080-exec-1] INFO  com.example.task20.aspect.Aspect – Class Name: com.example.task20.service.UserService. Method Name: filterByFields. Time taken for Execution is :83ms
+211867 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+211870 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+211873 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+634  [main] INFO  c.example.task20.Task20Application – Starting Task20Application using Java 15.0.6 on MacBook-Pro-Maksim.local with PID 8818 (/Users/maksimtomanov/IdeaProjects/JavaPatternMirea/src/com/company/task20/target/classes started by maksimtomanov in /Users/maksimtomanov/IdeaProjects/JavaPatternMirea/src/com/company/task20)
+637  [main] INFO  c.example.task20.Task20Application – No active profile set, falling back to 1 default profile: "default"
+1204 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1247 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 37 ms. Found 2 JPA repository interfaces.
+1933 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+1938 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+1938 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+1939 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.58]
+2002 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+2002 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1284 ms
+2167 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+2213 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+2669 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+3045 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+3285 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+3297 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+3308 [main] INFO  c.example.task20.Task20Application – Started Task20Application in 3.019 seconds (JVM running for 3.868)
+9574 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+9574 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+9575 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 1 ms
+9623 [http-nio-8080-exec-1] INFO  c.e.task20.service.UserService – get all users with filter: fullName contains MAK, lastName contains ""
+23775 [http-nio-8080-exec-4] INFO  c.e.task20.service.UserService – get all users with filter: fullName contains MAK, lastName contains ""
+71845 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+71847 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+71851 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+599  [main] INFO  c.example.task20.Task20Application – Starting Task20Application using Java 15.0.6 on MacBook-Pro-Maksim.local with PID 8871 (/Users/maksimtomanov/IdeaProjects/JavaPatternMirea/src/com/company/task20/target/classes started by maksimtomanov in /Users/maksimtomanov/IdeaProjects/JavaPatternMirea/src/com/company/task20)
+601  [main] INFO  c.example.task20.Task20Application – No active profile set, falling back to 1 default profile: "default"
+1134 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1180 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 40 ms. Found 2 JPA repository interfaces.
+1947 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+1952 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+1953 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+1953 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.58]
+2023 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+2024 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1355 ms
+2214 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+2264 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+2773 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+3107 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+3374 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+3386 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+3397 [main] INFO  c.example.task20.Task20Application – Started Task20Application in 3.13 seconds (JVM running for 3.81)
+54785 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+54787 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+54789 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+628  [main] INFO  c.example.task20.Task20Application – Starting Task20Application using Java 15.0.6 on MacBook-Pro-Maksim.local with PID 8914 (/Users/maksimtomanov/IdeaProjects/JavaPatternMirea/src/com/company/task20/target/classes started by maksimtomanov in /Users/maksimtomanov/IdeaProjects/JavaPatternMirea/src/com/company/task20)
+632  [main] INFO  c.example.task20.Task20Application – No active profile set, falling back to 1 default profile: "default"
+1108 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1163 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 47 ms. Found 2 JPA repository interfaces.
+1831 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+1835 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+1836 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+1836 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.58]
+1896 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+1896 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1215 ms
+2060 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+2100 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+2548 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+2950 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+3221 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+3232 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+3242 [main] INFO  c.example.task20.Task20Application – Started Task20Application in 2.973 seconds (JVM running for 3.851)
+9552 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+9553 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+9555 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 2 ms
+9602 [http-nio-8080-exec-2] INFO  c.e.task20.service.UserService – get all users with filter: fullName contains MAK, lastName contains ""
+9675 [http-nio-8080-exec-2] INFO  com.example.task20.aspect.Aspect – UserService.filterByFields(..) - 90ms
+21631 [http-nio-8080-exec-4] INFO  c.e.task20.service.UserService – get all users with filter: fullName contains MAK, lastName contains ""
+21649 [http-nio-8080-exec-4] INFO  com.example.task20.aspect.Aspect – UserService.filterByFields(..) - 18ms
+22184 [http-nio-8080-exec-6] INFO  c.e.task20.service.UserService – get all users with filter: fullName contains MAK, lastName contains ""
+22194 [http-nio-8080-exec-6] INFO  com.example.task20.aspect.Aspect – UserService.filterByFields(..) - 10ms
+22593 [http-nio-8080-exec-7] INFO  c.e.task20.service.UserService – get all users with filter: fullName contains MAK, lastName contains ""
+22605 [http-nio-8080-exec-7] INFO  com.example.task20.aspect.Aspect – UserService.filterByFields(..) - 12ms
+361586 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+361588 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+361591 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+598  [main] INFO  c.example.task20.Task20Application – Starting Task20Application using Java 15.0.6 on MacBook-Pro-Maksim.local with PID 9097 (/Users/maksimtomanov/IdeaProjects/JavaPatternMirea/src/com/company/task20/target/classes started by maksimtomanov in /Users/maksimtomanov/IdeaProjects/JavaPatternMirea/src/com/company/task20)
+600  [main] INFO  c.example.task20.Task20Application – No active profile set, falling back to 1 default profile: "default"
+1129 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1170 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 35 ms. Found 2 JPA repository interfaces.
+1826 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+1830 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+1831 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+1831 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.58]
+1893 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+1894 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1224 ms
+2054 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+2098 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+2541 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+2918 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+3158 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+3169 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+3179 [main] INFO  c.example.task20.Task20Application – Started Task20Application in 2.92 seconds (JVM running for 3.716)
+17340 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+17341 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+17342 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 1 ms
+17387 [http-nio-8080-exec-1] INFO  c.e.task20.service.UserService – get all users with filter: fullName contains MAK, lastName contains ""
+17461 [http-nio-8080-exec-1] INFO  com.example.task20.aspect.Aspect – UserService.filterByFields(..) - 89ms
+26134 [http-nio-8080-exec-3] INFO  c.e.task20.service.UserService – get all users with filter: fullName contains "", lastName contains sm
+26149 [http-nio-8080-exec-3] INFO  com.example.task20.aspect.Aspect – UserService.filterByFields(..) - 15ms
+39780 [http-nio-8080-exec-4] INFO  c.e.task20.service.UserService – add dog com.example.task20.entity.DogEntity@6d68076a to user 2
+39836 [http-nio-8080-exec-4] INFO  com.example.task20.aspect.Aspect – UserService.addDogToUser(..) - 56ms
+123599 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+123601 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+123603 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+730  [main] INFO  c.example.task20.Task20Application – Starting Task20Application using Java 15.0.6 on MacBook-Pro-Maksim.local with PID 9180 (/Users/maksimtomanov/IdeaProjects/JavaPatternMirea/src/com/company/task20/target/classes started by maksimtomanov in /Users/maksimtomanov/IdeaProjects/JavaPatternMirea/src/com/company/task20)
+732  [main] INFO  c.example.task20.Task20Application – No active profile set, falling back to 1 default profile: "default"
+1250 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1291 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 35 ms. Found 2 JPA repository interfaces.
+1942 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+1946 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+1947 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+1947 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.58]
+2011 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+2011 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1207 ms
+2182 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+2224 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+2746 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+3086 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+3334 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+3345 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+3355 [main] INFO  c.example.task20.Task20Application – Started Task20Application in 2.99 seconds (JVM running for 3.982)
+7389 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+7390 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+7390 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 0 ms
+7478 [http-nio-8080-exec-1] INFO  c.e.task20.service.UserService – add dog DogEntity(id=null, name=dog1, breed=breeeeed, user=null) to user 2
+7539 [http-nio-8080-exec-1] INFO  com.example.task20.aspect.Aspect – UserService.addDogToUser(..) - 78ms
+56334 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+56337 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+56339 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
