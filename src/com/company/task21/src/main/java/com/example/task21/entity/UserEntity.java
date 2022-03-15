@@ -1,4 +1,4 @@
-package com.example.task20.entity;
+package com.example.task21.entity;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Getter;
@@ -23,7 +23,7 @@ public class UserEntity {
     private String firstName;
     @Column(name = "last_name")
     private String lastName;
-    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
     @JsonManagedReference
     private List<DogEntity> dogs = new ArrayList<>();
 }

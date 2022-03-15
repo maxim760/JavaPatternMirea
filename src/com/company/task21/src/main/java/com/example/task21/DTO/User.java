@@ -1,7 +1,7 @@
-package com.example.task20.DTO;
+package com.example.task21.DTO;
 
-import com.example.task20.entity.DogEntity;
-import com.example.task20.entity.UserEntity;
+import com.example.task21.entity.DogEntity;
+import com.example.task21.entity.UserEntity;
 import lombok.Getter;
 import lombok.Setter;
 

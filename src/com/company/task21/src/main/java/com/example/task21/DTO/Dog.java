@@ -1,9 +1,12 @@
-package com.example.task20.DTO;
+package com.example.task21.DTO;
 
-import com.example.task20.entity.DogEntity;
-import com.example.task20.entity.UserEntity;
+import com.example.task21.entity.DogEntity;
+import com.example.task21.entity.UserEntity;
 import lombok.Getter;
 import lombok.Setter;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Getter
 @Setter
@@ -22,5 +25,14 @@ public class Dog {
         dog.setName(dogEntity.getName());
         dog.setUser(dogEntity.getUser());
         return dog;
+    }
+
+    static public List<Dog> toDTO(List<DogEntity> dogEntities) {
+        List<Dog> dogs = new ArrayList<>();
+        for (int i = 0; i < dogEntities.size(); i++) {
+            DogEntity dog = dogEntities.get(i);
+            dogs.add(toDTO(dog));
+        }
+        return dogs;
     }
 }

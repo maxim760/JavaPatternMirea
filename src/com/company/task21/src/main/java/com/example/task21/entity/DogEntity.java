@@ -1,4 +1,4 @@
-package com.example.task20.entity;
+package com.example.task21.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.Getter;
@@ -20,7 +20,7 @@ public class DogEntity {
     private Long id;
     private String name;
     private String breed;
-    @ManyToOne(targetEntity = UserEntity.class, fetch = FetchType.LAZY)
+    @ManyToOne(targetEntity = UserEntity.class, fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id")
     @JsonBackReference
     private UserEntity user;

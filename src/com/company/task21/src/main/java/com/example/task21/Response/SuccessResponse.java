@@ -1,4 +1,4 @@
-package com.example.task20.Response;
+package com.example.task21.Response;
 
 public class SuccessResponse<T> extends UserResponse {
     public SuccessResponse(T data, String message) {

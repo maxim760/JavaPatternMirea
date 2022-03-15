@@ -1,4 +1,4 @@
-package com.example.task20.Response;
+package com.example.task21.Response;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

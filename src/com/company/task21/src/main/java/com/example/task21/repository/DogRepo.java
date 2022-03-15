@@ -1,6 +1,6 @@
-package com.example.task20.repository;
+package com.example.task21.repository;
 
-import com.example.task20.entity.DogEntity;
+import com.example.task21.entity.DogEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
