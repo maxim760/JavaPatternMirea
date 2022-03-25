@@ -1,0 +1,26 @@
+764  [main] INFO  c.example.task21.Task21Application – Starting Task21Application using Java 15.0.6 on MacBook-Pro-Maksim.local with PID 37401 (/Users/maksimtomanov/IdeaProjects/JavaPatternMirea/src/com/company/task23/target/classes started by maksimtomanov in /Users/maksimtomanov/IdeaProjects/JavaPatternMirea/src/com/company/task23)
+775  [main] INFO  c.example.task21.Task21Application – No active profile set, falling back to 1 default profile: "default"
+1447 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1498 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 41 ms. Found 2 JPA repository interfaces.
+2350 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+2358 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+2359 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+2359 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.58]
+2417 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+2417 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1597 ms
+2603 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+2672 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+3184 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+3241 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+3941 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will not secure any request
+4001 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+4013 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+4024 [main] INFO  c.example.task21.Task21Application – Started Task21Application in 3.703 seconds (JVM running for 4.446)
+15590 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+15591 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+15593 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 2 ms
+63205 [Asynchronous Process-1] INFO  c.e.task21.service.UserService – add new user Ivan Dmitriev
+437651 [Asynchronous Process-2] INFO  com.example.task21.aspect.Aspect – DogService.getAll() - 144ms
+437678 [Asynchronous Process-3] INFO  c.e.task21.service.UserService – get all users with filter: fullName contains "", lastName contains ""
+437798 [Asynchronous Process-3] INFO  com.example.task21.aspect.Aspect – UserService.filterByFields(..) - 120ms
+437802 [scheduling-1] INFO  com.example.task21.aspect.Aspect – ScheduleService.updateFiles() - 10378ms

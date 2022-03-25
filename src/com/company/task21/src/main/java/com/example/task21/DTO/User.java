@@ -4,16 +4,19 @@ import com.example.task21.entity.DogEntity;
 import com.example.task21.entity.UserEntity;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Getter
 @Setter
+@ToString
 public class User {
     private long id;
     private String firstName;
     private String lastName;
+    private String username;
     private List<DogEntity> dogs = new ArrayList<>();
 
     public User() {}
@@ -24,6 +27,7 @@ public class User {
         user.setFirstName(userEntity.getFirstName());
         user.setLastName(userEntity.getLastName());
         user.setDogs(userEntity.getDogs());
+        user.setUsername(userEntity.getUsername());
         return user;
     }
     public static List<User> toDTO(List<UserEntity> userEntities) {

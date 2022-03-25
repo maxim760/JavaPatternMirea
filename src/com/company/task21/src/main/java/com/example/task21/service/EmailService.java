@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.mail.MailSender;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
@@ -19,19 +20,24 @@ public class EmailService {
     private String mailFrom;
 
     @Autowired
-    private JavaMailSender javaMailSender;
+    private MailSender javaMailSender;
 
 
     public void sendEmail(String title, String text) {
-        SimpleMailMessage msg = new SimpleMailMessage();
-        msg.setTo(mailTo);
-        msg.setFrom(mailFrom);
-        System.out.println(mailTo);
-        msg.setSubject(title);
-        msg.setText(text);
-        System.out.println(title + " " + text);
-        javaMailSender.send(msg);
-        log.info("Сообщение на email отправлено: " + title);
+        try {
+            System.out.println("start send");
+            SimpleMailMessage msg = new SimpleMailMessage();
+            msg.setTo(mailTo);
+            msg.setFrom(mailFrom);
+            System.out.println(mailTo + "mailto" + javaMailSender.toString());
+            msg.setSubject(title);
+            msg.setText(text);
+            System.out.println(title + " " + text + "title and text");
+            javaMailSender.send(msg);
+            log.info("Сообщение на email отправлено: " + title);
+        } catch(Exception e) {
+            System.out.println("Ошибка:" + e.getMessage());
+        }
 
     }
 }

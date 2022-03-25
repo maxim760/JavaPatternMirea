@@ -9,4 +9,5 @@ import java.util.List;
 @Repository
 public interface UserRepo extends JpaRepository<UserEntity, Long> {
     List<UserEntity> findAllByFirstNameContainingIgnoreCaseAndLastNameContainingIgnoreCase(String firstName, String lastName);
+    UserEntity findByUsername(String username);
 }

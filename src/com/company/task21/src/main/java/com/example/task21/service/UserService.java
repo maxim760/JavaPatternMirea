@@ -1,6 +1,8 @@
 package com.example.task21.service;
 
+import com.example.task21.DTO.User;
 import com.example.task21.entity.DogEntity;
+import com.example.task21.entity.RoleEntity;
 import com.example.task21.entity.UserEntity;
 import com.example.task21.repository.DogRepo;
 import com.example.task21.repository.UserRepo;
@@ -9,15 +11,21 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Async;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutionException;
 
 @Service
 @RequiredArgsConstructor
-public class UserService {
+public class UserService implements UserDetailsService {
     private static Logger log = LoggerFactory.getLogger(UserService.class);
     @Autowired
     private UserRepo userRepo;
@@ -25,11 +33,14 @@ public class UserService {
     private DogRepo dogRepo;
     @Autowired
     private EmailService emailService;
+    @Autowired
+    private RoleService roleService;
+    @Autowired
+    BCryptPasswordEncoder bCryptPasswordEncoder;
 
     @Transactional
     @Async
     public CompletableFuture<UserEntity> addDogToUser(Long id, DogEntity dogData) throws Exception {
-//    public UserEntity addDogToUser(Long id, DogEntity dogData) throws Exception {
         log.info("add dog {} to user {}", dogData.toString(), id);
         UserEntity user = userRepo.findById(id).orElseThrow(() -> new Exception("Пользователь не найден"));
         DogEntity dog = new DogEntity();
@@ -44,78 +55,49 @@ public class UserService {
         System.out.println(dog.getUser() == null ? "1" : dog.getUser().getFirstName());
         emailService.sendEmail("Добавлено DOGS", dog.getName() + " " + dog.getBreed() + "\n " + "id:" + dog.getId() + "\nuser:" + user.getId() );
         return CompletableFuture.completedFuture(user);
-//        return user;
     }
 
     @Transactional
     @Async
-    public CompletableFuture<UserEntity> addUser(UserEntity userData) {
-//    public UserEntity addUser(UserEntity userData) {
+    public CompletableFuture<UserEntity> addUser(UserEntity userData) throws ExecutionException, InterruptedException {
         log.info("add new user {} {}", userData.getFirstName(), userData.getLastName());
+        System.out.println("--");
         UserEntity user = new UserEntity();
         user.setFirstName(userData.getFirstName());
         user.setLastName(userData.getLastName());
-        userRepo.save(user);
-        emailService.sendEmail("Добавлено USERS", user.toString());
+        user.setUsername(userData.getUsername());
+
+        RoleEntity role = roleService.findOrCreateByName("USER").get();
+        System.out.println(role.getName());
+        user.setRoles(Collections.singleton(role));
+        System.out.println("1");
+        user.setPassword(bCryptPasswordEncoder.encode(userData.getPassword()));
+        System.out.println("2");
+        userRepo.saveAndFlush(user);
+        System.out.println("3");
+        emailService.sendEmail("Добавлено USERS", User.toDTO(user).toString());
         return CompletableFuture.completedFuture(user);
-//        return user;
     }
 
     @Transactional(readOnly = true)
-//    @Transactional
     @Async
     public CompletableFuture<List<UserEntity>> filterByFields(String firstName, String lastName) {
-//    public List<UserEntity> filterByFields(String firstName, String lastName) {
         log.info(
                 "get all users with filter: fullName contains {}, lastName contains {}",
                 firstName.equals("") ? "\"\"" : firstName,
                 lastName.equals("") ? "\"\"" : lastName
         );
         List<UserEntity> items = userRepo.findAllByFirstNameContainingIgnoreCaseAndLastNameContainingIgnoreCase(firstName, lastName);
-//        .findAll();
-//        Hibernate.initialize(items);
         return CompletableFuture.completedFuture(items);
-//        return items;
+    }
+
+    @Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        System.out.println(username + "!!username");
+        UserEntity user =  userRepo.findByUsername(username);
+        if(user == null) {
+            throw new UsernameNotFoundException("Пользователь не найден");
+        }
+        return user;
     }
 }
-
-
-/*
-* package com.example.task20.service;
-
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.mail.SimpleMailMessage;
-import org.springframework.mail.javamail.JavaMailSender;
-import org.springframework.stereotype.Service;
-
-@Service
-@RequiredArgsConstructor
-@Slf4j
-public class EmailService {
-    @Value("${mail.to}")
-    private String mailTo;
-
-    @Value("${mail.from}")
-    private String mailFrom;
-
-    @Autowired
-    private JavaMailSender javaMailSender;
-
-    public void sendEmail(String title, String text) {
-        SimpleMailMessage msg = new SimpleMailMessage();
-        msg.setTo(mailTo);
-        msg.setFrom(mailFrom);
-        System.out.println(mailTo);
-        msg.setSubject(title);
-        msg.setText(text);
-        System.out.println(title + " " + text);
-        javaMailSender.send(msg);
-        log.info("Сообщение на email отправлено: " + title);
-
-    }
-}
-
-*  */

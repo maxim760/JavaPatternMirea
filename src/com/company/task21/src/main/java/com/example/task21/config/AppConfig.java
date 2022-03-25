@@ -1,15 +1,19 @@
 package com.example.task21.config;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.scheduling.annotation.AsyncConfigurerSupport;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
+import java.util.Properties;
 import java.util.concurrent.Executor;
 
 
@@ -18,6 +22,7 @@ import java.util.concurrent.Executor;
 @EnableAsync
 @EnableScheduling
 @EnableAutoConfiguration
+@ComponentScan
 public class AppConfig extends AsyncConfigurerSupport {
     @Override
     @Bean
@@ -30,4 +35,6 @@ public class AppConfig extends AsyncConfigurerSupport {
         executor.initialize();
         return executor;
     }
+
+
 }

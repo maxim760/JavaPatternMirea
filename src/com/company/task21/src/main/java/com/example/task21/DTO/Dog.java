@@ -14,7 +14,6 @@ public class Dog {
     private Long id;
     private String name;
     private String breed;
-    private UserEntity user;
 
     public Dog() {}
 
@@ -23,7 +22,6 @@ public class Dog {
         dog.setId(dogEntity.getId());
         dog.setBreed(dogEntity.getBreed());
         dog.setName(dogEntity.getName());
-        dog.setUser(dogEntity.getUser());
         return dog;
     }
 
