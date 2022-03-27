@@ -7,6 +7,7 @@ import com.example.task21.entity.UserEntity;
 import com.example.task21.repository.DogRepo;
 import com.example.task21.repository.UserRepo;
 import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +25,7 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 
 @Service
+@Setter
 @RequiredArgsConstructor
 public class UserService implements UserDetailsService {
     private static Logger log = LoggerFactory.getLogger(UserService.class);
@@ -38,6 +40,13 @@ public class UserService implements UserDetailsService {
     @Autowired
     BCryptPasswordEncoder bCryptPasswordEncoder;
 
+    @Autowired
+    public UserService(UserRepo userRepo) {
+
+        this.userRepo = userRepo;
+    }
+
+
     @Transactional
     @Async
     public CompletableFuture<UserEntity> addDogToUser(Long id, DogEntity dogData) throws Exception {
@@ -50,9 +59,11 @@ public class UserService implements UserDetailsService {
         List<DogEntity> currentDogs = user.getDogs();
         currentDogs.add(dog);
         user.setDogs(currentDogs);
+        System.out.println("1");
         dogRepo.save(dog);
+        System.out.println("2");
         userRepo.save(user);
-        System.out.println(dog.getUser() == null ? "1" : dog.getUser().getFirstName());
+        System.out.println("3");
         emailService.sendEmail("Добавлено DOGS", dog.getName() + " " + dog.getBreed() + "\n " + "id:" + dog.getId() + "\nuser:" + user.getId() );
         return CompletableFuture.completedFuture(user);
     }
@@ -70,12 +81,9 @@ public class UserService implements UserDetailsService {
         RoleEntity role = roleService.findOrCreateByName("USER").get();
         System.out.println(role.getName());
         user.setRoles(Collections.singleton(role));
-        System.out.println("1");
         user.setPassword(bCryptPasswordEncoder.encode(userData.getPassword()));
-        System.out.println("2");
         userRepo.saveAndFlush(user);
-        System.out.println("3");
-        emailService.sendEmail("Добавлено USERS", User.toDTO(user).toString());
+        emailService.sendEmail("Добавлено USERS", "User(" + user.getFirstName() + "; " + user.getLastName() + ")");
         return CompletableFuture.completedFuture(user);
     }
 
