@@ -1,0 +1,39 @@
+plugins {
+	id 'java'
+	id 'application'
+}
+
+sourceSets {
+	main {
+		java {
+			srcDirs 'src/main/java/'
+		}
+	}
+}
+
+jar {
+	manifest {
+		attributes("Main-Class": "Main")
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+task copyJar(type: Copy) {
+	from 'build/libs/task9.jar'
+	into 'docker'
+}
+
+tasks.register("hello") {
+	dependsOn copyJar
+	finalizedBy {
+		Docker
+	}
+}
+
+task Docker(type: Exec) {
+	Runtime.runtime.exec('docker build -t tag1 docker')
+	commandLine 'docker', 'run', 'tag1'
+}
